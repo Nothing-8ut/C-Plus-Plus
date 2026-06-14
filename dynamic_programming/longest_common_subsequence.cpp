@@ -60,7 +60,20 @@ int lcs(string a, string b) {
 
 int main() {
     string a, b;
-    cin >> a >> b;
-    cout << lcs(a, b);
+
+    // LCS = Longest Common Subsequence，最长公共子序列
+    cout << "LCS = Longest Common Subsequence" << endl;
+
+    cout << "Input string A: ";
+    cin >> a;
+
+    cout << "Input string B: ";
+    cin >> b;
+
+    cout << "One LCS: ";
+    int ans = lcs(a, b);
+
+    cout << "\nLength: " << ans << endl;
+
     return 0;
 }
